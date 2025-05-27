@@ -1,0 +1,379 @@
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem;
+      background: #f9f9f9;
+      color: #222;
+    }
+
+    .header-top {
+      background-color: #003b6f;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo-img {
+      width: 50px;
+      height: auto;
+    }
+
+    .logo-text {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .post-header {
+      margin: 2rem 0;
+    }
+
+    .author-info {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      gap: 10px;
+      margin-bottom: 0.5rem;
+    }
+
+    .avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .dot::before {
+      content: '•';
+      margin: 0 4px;
+    }
+
+    .post-title {
+      font-size: 36px;
+      font-weight: 700;
+      margin-top: 10px;
+      color: #000;
+      text-align: center;
+    }
+
+    h1, h2 {
+      text-align: left;
+      color: #004080;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    img.diagram {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 1rem auto;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .equation {
+      font-family: 'Courier New', Courier, monospace;
+      background: #eee;
+      padding: 0.2rem 0.5rem;
+      display: inline-block;
+      margin: 0.5rem 0;
+      border-radius: 3px;
+    }
+
+    nav {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    button#toggleSim {
+      background: #007acc;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button#toggleSim:hover {
+      background: #005fa3;
+    }
+
+    .simulator-container {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.6s ease;
+      margin-top: 1rem;
+    }
+
+    .simulator-container.open {
+      max-height: 800px;
+    }
+
+    iframe.simulator {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .post-footer {
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.social-icons a {
+  color: #000;
+  text-decoration: none;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.post-meta span {
+  margin-right: 15px;
+}
+
+.like-icon i {
+  color: #e74c3c;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.article-source {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.article-source a {
+  color: #1a0dab;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.wave-interference-section {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.wave-info-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.wave-info-box img {
+  width: 400px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.wave-text {
+  max-width: 500px;
+}
+
+.wave-text strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.highlight {
+  color: #007BFF;
+  font-style: italic;
+}
+
+.superposition-box {
+  background-color: #f1f9fd;
+  border-left: 3px solid #cde8f5;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.vector-sum {
+  color: #007BFF;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.wave-superposition-section {
+  max-width: 900px;
+  margin: 2em auto;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #222;
+  padding: 0 1em;
+}
+
+.wave-image {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.wave-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.wave-description p {
+  margin-bottom: 1em;
+}
+
+.wave-description a {
+  color: #0074d9;
+  text-decoration: underline;
+}
+
+.interference-equation {
+  background-color: #f1f9fd;
+  border-left: 4px solid #cde8f5;
+  padding: 1.2rem;
+  margin: 2rem 0;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+.interference-equation p {
+  margin-bottom: 1rem;
+}
+
+.interference-equation .equation-block {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.interference-equation ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.interference-equation li {
+  margin-bottom: 0.8rem;
+}
+
+.interference-equation .highlight {
+  color: #007BFF;
+  font-style: italic;
+}
+
+.constructive-interference {
+  margin-top: 2rem;
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+.constructive-interference h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.interference-box {
+  background-color: #e9f6ff;
+  border-left: 3px solid #00aaff;
+  padding: 20px;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+.interference-box .highlight {
+  font-weight: bold;
+  color: #00aaff;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.interference-box .formula {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.interference-box ul {
+  padding-left: 20px;
+}
+
+.interference-box ul li {
+  margin-bottom: 10px;
+}
+
+.simulator-intro {
+  background-color: #f7fad172;
+  padding: 18px 22px;
+  margin-bottom: 30px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.simulator-intro .highlight {
+  color: #00aaff;
+  font-weight: bold;
+}
+
+
